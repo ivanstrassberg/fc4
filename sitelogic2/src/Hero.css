@@ -41,7 +41,7 @@ html {
   background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.25);
-  background-image: url("/Users/ivansilin/Documents/coding/golang/foodShop/initHandle/static/sitelogic2/src/css/about.png");
+  background-image: url("fc4/sitelogic2/public/img/about.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
