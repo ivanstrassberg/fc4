@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "/Users/ivansilin/Documents/coding/golang/foodShop/initHandle/static/sitelogic2/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
