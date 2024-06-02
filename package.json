@@ -3,7 +3,7 @@
     "react": "^18.2.0"
     
   },
-  "homepage": "/",
+  "homepage": "https://naturesnookorganicshop.netlify.app",
   "scripts": {
        "predeploy": "npm run build",
         "start": "react-scripts start",
