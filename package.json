@@ -2,7 +2,7 @@
   "dependencies": {
     "react": "^18.2.0"
   },
-  "homepage": "https://naturesnookorganicshop.netlify.app",
+  "homepage": "https://naturesnookorganicshop.netlify.app/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
