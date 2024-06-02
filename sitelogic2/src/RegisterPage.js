@@ -16,7 +16,7 @@ function Registration() {
     setEmailError(null);
     setGeneralError(null);
   
-    fetch('https://go-foodstore-server-production.up.railway.app/register', {
+    fetch('http://localhost:8080/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

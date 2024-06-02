@@ -9,7 +9,7 @@ function Payment(props) {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("https://go-foodstore-server-production.up.railway.app/payment")
+    fetch("http://localhost:8080/payment")
       .then((res) => res.json())
       // console.log(res.json())
       .then(({clientSecret}) => setClientSecret(clientSecret));

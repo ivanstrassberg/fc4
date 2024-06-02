@@ -14,7 +14,7 @@ const CartPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('https://go-foodstore-server-production.up.railway.app/cart', {
+    fetch('http://localhost:8080/cart', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const CartPage = () => {
   };
 
   const handleDelete = (productId) => {
-    fetch(`https://go-foodstore-server-production.up.railway.app/cart/delete/${productId}`, {
+    fetch(`http://localhost:8080/cart/delete/${productId}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ const CartPage = () => {
       quantity: product.quantity,
     }));
 
-    fetch('https://go-foodstore-server-production.up.railway.app/payment', {
+    fetch('http://localhost:8080/payment', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

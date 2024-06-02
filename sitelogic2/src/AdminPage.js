@@ -7,7 +7,7 @@ const AdminPage = () => {
   // Navigation hook for redirection
   useEffect(() => {
     navigate('/unauthorized');
-    fetch('https://go-foodstore-server-production.up.railway.app/admin', { 
+    fetch('http://localhost:8080/admin', { 
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const AdminPage = () => {
     };
 
     try {
-      const response = await fetch('https://go-foodstore-server-production.up.railway.app/admin', {
+      const response = await fetch('http://localhost:8080/admin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
