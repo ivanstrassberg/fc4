@@ -12,7 +12,7 @@ const LoginForm = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:8080/login', {
+      const response = await fetch('https://go-foodstore-server-production.up.railway.app/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
