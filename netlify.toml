@@ -1,4 +1,4 @@
 [[redirects]]
 from = "/*"
-to = "/fc4/sitelogic2/public/login.html"
+to = "index.html"
 status = 200
