@@ -174,7 +174,7 @@ function ProductList() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8080/products')
+    fetch('https://go-foodstore-server-production.up.railway.app/products')
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
@@ -183,7 +183,7 @@ function ProductList() {
         console.error('Error fetching products:', error);
       });
     
-    fetch('http://localhost:8080/cart', {
+    fetch('https://go-foodstore-server-production.up.railway.app/cart', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -202,7 +202,7 @@ function ProductList() {
 
   const handleAddToCart = async (productId) => {
     try {
-      const response = await fetch(`http://localhost:8080/cart/add/${productId}`, {
+      const response = await fetch(`https://go-foodstore-server-production.up.railway.app/cart/add/${productId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -51,7 +51,7 @@ export default function CheckoutForm() {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: "http://localhost:3000/products",
+        return_url: "https://go-foodstore-server-production.up.railway.app/products",
         receipt_email: email,
       },
     });

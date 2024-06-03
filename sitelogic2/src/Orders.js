@@ -7,7 +7,7 @@ const Orders = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:8080/orders', {
+    fetch('https://go-foodstore-server-production.up.railway.app/orders', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

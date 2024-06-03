@@ -16,7 +16,7 @@ function ProductSearch() {
   const [products, setProducts] = useState([]);
   const { key } = useParams();
   useEffect(() => {
-    fetch(`http://localhost:8080/search/${key}`) 
+    fetch(`https://go-foodstore-server-production.up.railway.app/search/${key}`) 
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
